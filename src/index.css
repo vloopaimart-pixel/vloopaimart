@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-ink-50 text-ink-900 font-sans antialiased; }
+
+@layer components {
+  .btn-primary {
+    @apply px-5 py-2.5 bg-vloop-600 text-white font-semibold rounded-xl hover:bg-vloop-700 transition-colors text-sm;
+  }
+  .card-premium {
+    @apply bg-white rounded-2xl border border-ink-100 shadow-soft;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
